@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2a1700", "tertiary-container": "#653e00", "primary-fixed": "#b2eee8", "outline": "#707977", "outline-variant": "#bfc8c7", "surface-container-highest": "#dae2fd", "on-secondary-fixed-variant": "#005236", "surface": "#faf8ff", "surface-container-high": "#e2e7ff", "on-primary-fixed-variant": "#0c4f4b", "on-secondary-fixed": "#002113", "on-surface-variant": "#3f4947", "surface-bright": "#faf8ff", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "surface-container": "#eaedff", "secondary": "#006c49", "tertiary-fixed": "#ffddb8", "on-tertiary-container": "#faa213", "inverse-surface": "#283044", "on-tertiary-fixed-variant": "#653e00", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "background": "#faf8ff", "on-secondary-container": "#00714d", "surface-dim": "#d2d9f4", "secondary-fixed": "#6ffbbe", "on-primary-fixed": "#00201e", "on-surface": "#131b2e", "on-background": "#131b2e", "tertiary": "#472a00", "on-tertiary": "#ffffff", "inverse-primary": "#96d1cc", "secondary-container": "#6cf8bb", "primary": "#003734", "secondary-fixed-dim": "#4edea3", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-tint": "#2c6863", "primary-fixed-dim": "#96d1cc", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "primary-container": "#0b4f4b", "on-primary-container": "#85bfba" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "space-2xl": "2rem", "space-2xs": "0.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem", "space-lg": "1.25rem", "margin-tablet": "2rem", "gutter-tablet": "1.5rem", "space-md": "1rem", "space-3xl": "2.5rem", "margin-mobile": "1rem", "bottom-nav-safe": "4.5rem", "space-xl": "1.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "price-hero": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "price-card": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "price-hero": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "price-card": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="USTP SupplyHub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5FXCPM6smDUtUZ94lDar5LCE-9vMwL6pDVrBbSxSIbDAIKA3rvzJPToTuEwvholnCWdIArqr0eY7l18XT5_EKoXQm4-_6JaBIpLDdbogEWtZNzvopgYLpx3fqZMTSUlNDAYvKrUDnAMS4r_A9EDkrD_4V3GqPRBtHXhx16AyrkasfLnFteRGGZsu9tIk6egyGIyM1wqMX2QqMkWmmCVG90KakjUEuJQ-QABRCl4wOPBs2GIItFVxif_DC"/><div class="flex flex-col"><div class="flex items-center gap-space-2xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">USTP SupplyHub</span></div><div class="flex items-center gap-1"><span class="inline-flex items-center px-1.5 py-0.2 text-[9px] font-bold text-secondary bg-secondary-fixed/30 rounded-full leading-tight">USTP CDO Campus</span><span class="hidden text-on-surface-variant font-body-sm text-body-sm">• Home</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 flex h-4 w-4 items-center justify-center rounded-full bg-error text-[10px] font-bold text-on-error">3</span></button><a class="min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeOZMdwCg1pn-W0Xv1nbi9ariMaOrNs1wiCp6lLkHunPmW_lB7oa0dxBMk11ikE9cyy38UwqxspP6NXdEhnw1GCYtPMHq35iatleslZgueCNNAzdfWB5AwtwNdkySN25dCh8ZG3Pt_WFVJmbRZna8lALH1DrpNi1ijO75AxTY6lKaTNYQXMCOcCKjoGYEk9tuNgeMdBqP7zXfKQDcSc3WHQy5R4FIVtMnPZduNyBUBCkIv_9fnJ0ZZeA"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-bottom-nav-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Greeting & Semester Savings Banner -->
+<section class="px-gutter-mobile pt-space-xs pb-space-sm">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary-container to-primary p-space-md shadow-md text-on-primary">
+<!-- Decorative Organic Backdrop Blobs -->
+<div class="absolute -right-8 -bottom-10 w-36 h-36 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="absolute top-0 right-1/4 w-20 h-20 rounded-full bg-primary-fixed/15 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary-container/25 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">waving_hand</span>
+</span>
+<h1 class="font-headline-sm text-headline-sm text-on-primary">Hi, USTP Student!</h1>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-label-sm text-label-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">school</span>
+            CEA Building
+          </span>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim/90">
+          Ready to split costs and save on midyear semester supplies?
+        </p>
+<!-- Savings Badge Stat -->
+<div class="mt-1 flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest/10 backdrop-blur-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">savings</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Your Campus Savings</span>
+<span class="font-price-card text-price-card text-secondary-fixed font-extrabold">₱480 saved this semester</span>
+</div>
+</div>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-fixed/20 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Barcode Scan Bar -->
+<section class="px-gutter-mobile pb-space-sm">
+<div class="relative flex items-center w-full rounded-full bg-surface-container-lowest shadow-sm p-1.5 focus-within:ring-2 focus-within:ring-primary-fixed">
+<div class="flex items-center pl-3 pr-2 text-on-surface-variant pointer-events-none">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input aria-label="Search items" class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none pr-2 min-w-0" placeholder="Search school supplies, books, calculators..." type="search"/>
+<div class="flex items-center gap-1 pr-1">
+<button aria-label="Scan barcode" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container text-primary hover:bg-secondary-container/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+<button aria-label="Filter results" class="w-9 h-9 flex items-center justify-center rounded-full bg-primary text-on-primary shadow-sm hover:opacity-95 transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quick Category Pills -->
+<section class="pb-space-md">
+<div class="flex items-center justify-between px-gutter-mobile mb-2">
+<h2 class="font-label-lg text-label-lg text-on-surface">Campus Essentials</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7 Categories</span>
+</div>
+<div class="flex gap-space-xs overflow-x-auto px-gutter-mobile no-scrollbar snap-x py-1">
+<!-- Pens -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="relative w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">edit</span>
+<span class="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] leading-tight font-bold">HOT</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Pens</span>
+</button>
+<!-- Paper -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="relative w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">description</span>
+<span class="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] leading-tight font-bold">-25%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Paper</span>
+</button>
+<!-- Notebooks -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">menu_book</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Notebooks</span>
+</button>
+<!-- Folders -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">folder</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Folders</span>
+</button>
+<!-- Art Materials -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">palette</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Art Supplies</span>
+</button>
+<!-- Electronics -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">calculate</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Electronics</span>
+</button>
+<!-- Printing -->
+<button class="snap-start flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none" type="button">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center group-hover:bg-primary-fixed/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[26px]">print</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-primary">Printing</span>
+</button>
+</div>
+</section>
+<!-- Highlight Banner: Group Buy Happening Now -->
+<section class="px-gutter-mobile pb-space-lg">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-md shadow-sm">
+<!-- Ambient accent banner edge -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-tertiary-fixed-dim via-on-tertiary-container to-secondary"></div>
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-1.5">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-error"></span>
+</span>
+<span class="font-label-lg text-label-lg text-on-surface font-extrabold tracking-tight">Group Buy Happening Now</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-bold">
+<span class="material-symbols-outlined text-[13px]">timer</span>
+<span id="group-buy-countdown">04:22:15</span>
+</div>
+</div>
+<div class="flex gap-space-sm items-start mt-1">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="A clean ream of pristine white A4 multi-purpose 80gsm copy paper neatly stacked on a clean university study desk with natural warm morning sunlight casting soft geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXvP9cWGyltY4uGFMGgsc2ZX4jC0thKfsd8Dp0YgFSDQOXpFgG8408Jq720y5nxiIh_S7JEqa2-fHHKtBHMIetIz38tGtl8WJmbChybNvY1g9EirlldFsbsvZNzCYfv78eSlV6_b_qM8ciKKdDOMZIX9I3bXaj7uvcwzZUSN4HnDsPzBEzX6PccQ4mW0gj_xNsEi5fWEVW48v9yrp9_afSFp_NxVkBgt8YkKKWHV-uSlKScaT9CHFA_Q"/>
+<span class="absolute bottom-1 left-1 px-1 py-0.5 rounded bg-surface/90 font-label-sm text-[9px] font-bold text-on-surface">80gsm</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">A4 Hard Copy Multi-Purpose Ream</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+<span>7 of 10 students joined</span>
+</p>
+<!-- Group Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-high my-2 relative overflow-hidden">
+<div class="h-full rounded-full bg-secondary transition-all duration-500" style="width: 70%"></div>
+</div>
+<div class="flex items-center justify-between mt-0.5">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-secondary font-extrabold">₱220</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₱260</span>
+</div>
+<button class="h-8 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all active:scale-95 shadow-sm" onclick="this.innerText = 'Pool Joined!'; this.classList.remove('bg-primary-container', 'text-on-primary'); this.classList.add('bg-secondary-container', 'text-on-secondary-fixed');" type="button">
+              Join Pool
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Deals & Price Drops Header -->
+<section class="px-gutter-mobile flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Best Deals &amp; Price Drops</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified campus store rates &amp; peer listings</p>
+</div>
+<a class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5" href="#">
+      View All
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</section>
+<!-- Product Deals Feed -->
+<section class="px-gutter-mobile flex flex-col gap-space-sm pb-space-lg">
+<!-- Card 1: Pilot G-Tec C4 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-sm shadow-sm flex gap-space-sm items-center relative overflow-hidden transition-all active:scale-[0.99]">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-low flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A sleek black Pilot G-Tec C4 0.3mm ultra fine needle-point rollerball pen placed beside an open engineering grid notebook with crisp handwritten mathematical formulas under focused study lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYNedrEgFaawavlzAdsn94mpAGmMFYQuoCe5PK8gcDBkq3_g0XF-7NdEokri2pwf8fEa4kbBuWx524E1QDMiPFTiLH781VXeEsM8njWUfXVZ_-iwT6zczKaGXqwg_tAHtirHECbYyrY4DcUtOXacj1JdRq3ZWI4hQwwyMdlDNyqig2Nk3GrPNEEH7VENM0I8g6BVveAUeKmfJ_3SLArJFhecdf_kmJSif61TJdrszLo_UgAGWADtm2Lg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-[10px] font-bold">
+          Save ₱17
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">storefront</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Campus BookStore</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate font-semibold">Pilot G-Tec C4 0.3mm (Black)</h3>
+<div class="flex items-center gap-1.5 my-1">
+<div class="flex items-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm ml-0.5 font-bold">4.9</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">(128 sold)</span>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-primary font-extrabold">₱68</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₱85</span>
+</div>
+<button aria-label="Add Pilot G-Tec to cart" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: A4 Bond Paper 500 Sheets -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-sm shadow-sm flex gap-space-sm items-center relative overflow-hidden transition-all active:scale-[0.99]">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-low flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A thick ream of 500 sheets standard A4 bond paper substance 20 wrapped neatly in craft packaging on a wooden academic desk with architectural rulers in the soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHLbaUeV9VM52_b1Hxa_chJ9kxf9m8A2GkVmcI5oKgqFkdZuUMKY3AgpFvQd96DDz1E2KL6AsPAF877PbLWMru899xJX6lSD-qLqHrfU97bOyirYipag35UdwVqGZZxWAK7NrhZATSyrtiIBHzMzcsgELM9kjyLAlNdFLdrJvWA7vWiBRmOE3ClgshZVxnjbM_zDAqU7dcBgS7YNeXJfw2FcHphjHXBJykmk9OoEJeII4mMjWHk8Xghw"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold">
+          Compare 3
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">USTP Coop Store</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate font-semibold">A4 Bond Paper 500 Sheets (Sub 20)</h3>
+<div class="flex items-center gap-1.5 my-1">
+<div class="flex items-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm ml-0.5 font-bold">4.8</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">(340 verified)</span>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-secondary font-extrabold">₱240</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Lowest on Campus</span>
+</div>
+<button aria-label="Compare sellers for A4 bond paper" class="px-3 h-8 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" type="button">
+            Compare
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 3: Casio FX-991EX ClassWiz -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-sm shadow-sm flex gap-space-sm items-center relative overflow-hidden transition-all active:scale-[0.99]">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-low flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="An authentic Casio FX-991EX ClassWiz scientific calculator in pristine like-new condition displayed neatly on a dark matte study desk with clear high-resolution LCD matrix showing calculus equations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABvacxOSIWjLCTnL0lbxfLfAy49W3PWKPuvmDSAFWGWegP7-fhNVJoInaTLe6fW320yRaGwAt5mAo9Ri3sgf1BfX-7rU8ATK-a2ige3K-QOTnV6WNFTu6H54lNc2rj3gLtO9-KFSu92uddYNKxb4sBrCrXc9DOMQhsJN11jWRRq09_xrLns4aqcYVbzQJvFesO7Dc7r3Nbpx4n1gayx0RlW-s7yZq-zE_gn3ZhSM7aX9HdkEdQS27Bug"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-[10px] font-bold">
+          Save ₱550
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">person</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">ECE Senior (Like New)</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate font-semibold">Casio FX-991EX ClassWiz</h3>
+<div class="flex items-center gap-1.5 my-1">
+<div class="flex items-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm ml-0.5 font-bold">5.0</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">(14 campus sales)</span>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-primary font-extrabold">₱850</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₱1,400</span>
+</div>
+<button aria-label="Message student seller" class="px-3 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:opacity-90 active:scale-95 transition-all shadow-sm" type="button">
+            Buy Now
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Student Group Buys Section -->
+<section class="pb-space-lg">
+<div class="flex items-center justify-between px-gutter-mobile mb-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Active Student Group Buys</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Team up with batchmates to unlock wholesale tiers</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">diversity_3</span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto px-gutter-mobile no-scrollbar snap-x py-1">
+<!-- Group Buy 1: Faber-Castell Drawing Pens -->
+<div class="snap-start w-64 flex-shrink-0 rounded-2xl bg-surface-container-lowest p-space-sm shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-28 rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="A set of Faber-Castell technical drawing pens laid out on drafting graph paper with clean mechanical lines and architecture tools in ambient studio daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA7fLDcct7uC6QzTnbUZG3kaolte4uEqjOB78n25M37mxfOUPlqFcJ3_HGNiHCHz4TXWBL-1n1iyeZEGZT7Vz6Tb0CixHYyQivcLBhlsgZVX-HK1OgO2y8FlYI15WDERSCt78TRYeqrcAOuAdK6R76mRJ8kXeBn_t4w0C7ydAtROlqgH6i9OOeFRoF-vfl_I2OTzZRo01rP2vT5Dm_59lGsP450tcY-gClv5OizF7Uev3v-X8SiVGe8Q"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] font-bold">
+              Engineering Batch
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Faber-Castell Drawing Pens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">8 of 10 joined • 2 slots left</p>
+<div class="w-full h-2 rounded-full bg-surface-container-high my-2 overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 80%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-price-card text-price-card text-primary font-extrabold">₱320</span>
+<span class="font-label-sm text-label-sm text-outline block line-through">₱420</span>
+</div>
+<button class="h-8 px-3 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:bg-secondary-fixed transition-colors active:scale-95" onclick="this.innerText = 'Reserved!'; this.classList.replace('bg-secondary-container', 'bg-surface-container-high');" type="button">
+            Claim Slot
+          </button>
+</div>
+</div>
+<!-- Group Buy 2: Yellow Pad Paper 15/20 -->
+<div class="snap-start w-64 flex-shrink-0 rounded-2xl bg-surface-container-lowest p-space-sm shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-28 rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="A stack of standard legal yellow pad papers on a campus study desk beside a collegiate coffee tumbler and fountain pen in soft golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYPgvARUqdgedk5-VHtA28MBJHWh_715MJ0py9CLUb97H-NzRVEf0OWd-AAniVhJ869_zIIZrEcoangvDAjuxqDyUCbfT6E5mgpCOIIJB5JqYzQ3zidonC8OwqA3l4Ix_y_IMbqUEcZexegggZrqilLULwUYD-5SwmxpsJogkRG-AXZnSY500FCwm6LJ0x7IMWV0jtkXmB_vFHKRaGDvyJVtS-NJIUnKBKAMtsuYy1RzICOJqmtoGrOQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] font-bold">
+              Bulk Pack (5x)
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Yellow Pad Paper (80 leaves)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">15 of 20 joined • 5 slots left</p>
+<div class="w-full h-2 rounded-full bg-surface-container-high my-2 overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 75%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-price-card text-price-card text-primary font-extrabold">₱115</span>
+<span class="font-label-sm text-label-sm text-outline block line-through">₱160</span>
+</div>
+<button class="h-8 px-3 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:bg-secondary-fixed transition-colors active:scale-95" onclick="this.innerText = 'Reserved!'; this.classList.replace('bg-secondary-container', 'bg-surface-container-high');" type="button">
+            Claim Slot
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Peer-to-Peer Community Callout Banner -->
+<section class="px-gutter-mobile pb-space-xl">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[20px]">recycling</span>
+</span>
+<span class="font-label-lg text-label-lg text-primary font-extrabold">Peer-to-Peer ReUse</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+        Sell your used textbooks &amp; lab kits directly to freshmen!
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Pass down your semester notes, dissection toolkits, or graphing calculators. Zero listing fees for all USTP students.
+      </p>
+<div class="pt-2 flex items-center gap-space-xs">
+<button class="h-10 px-5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95 flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Post Item
+        </button>
+<button class="h-10 px-4 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface transition-colors" type="button">
+          How It Works
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic micro-countdown simulation for highlight pool
+  (function initGroupBuyCountdown() {
+    let totalSeconds = 4 * 3600 + 22 * 60 + 15;
+    const timerElement = document.getElementById('group-buy-countdown');
+    if (!timerElement) return;
+
+    setInterval(() => {
+      if (totalSeconds <= 0) return;
+      totalSeconds--;
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      timerElement.textContent = 
+        String(hours).padStart(2, '0') + ':' +
+        String(minutes).padStart(2, '0') + ':' +
+        String(seconds).padStart(2, '0');
+    }, 1000);
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,55,52,0.05)]" data-active-classes="text-primary-container font-bold"><div class="flex items-center justify-around h-16 px-space-xs relative"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 transition-all gap-0.5 text-primary-container font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-primary transition-all gap-0.5" data-path="compare" href="#"><span class="material-symbols-outlined text-[24px]">compare_arrows</span><span class="font-label-sm text-label-sm">Compare</span></a><div class="flex items-center justify-center min-w-[44px] min-h-[44px] px-space-2xs -mt-5"><a aria-label="Sell item" class="flex flex-col items-center justify-center w-12 h-12 rounded-full bg-primary-container text-on-primary shadow-md hover:bg-primary transition-transform active:scale-95" data-path="sell" href="#"><span class="material-symbols-outlined text-[26px]">add</span></a></div><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-primary transition-all gap-0.5 relative" data-path="orders" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="absolute -top-1 -right-2 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-secondary text-[9px] font-bold text-on-secondary">1</span></span><span class="font-label-sm text-label-sm">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-primary transition-all gap-0.5" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

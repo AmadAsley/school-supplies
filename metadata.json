@@ -1,0 +1,6 @@
+{
+  "name": "USTP SupplyHub",
+  "description": "Campus price comparison, student group buying, and peer-to-peer supply marketplace for USTP CDO students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

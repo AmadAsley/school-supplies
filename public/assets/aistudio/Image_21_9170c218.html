@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2a1700", "tertiary-container": "#653e00", "primary-fixed": "#b2eee8", "outline": "#707977", "outline-variant": "#bfc8c7", "surface-container-highest": "#dae2fd", "on-secondary-fixed-variant": "#005236", "surface": "#faf8ff", "surface-container-high": "#e2e7ff", "on-primary-fixed-variant": "#0c4f4b", "on-secondary-fixed": "#002113", "on-surface-variant": "#3f4947", "surface-bright": "#faf8ff", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "surface-container": "#eaedff", "secondary": "#006c49", "tertiary-fixed": "#ffddb8", "on-tertiary-container": "#faa213", "inverse-surface": "#283044", "on-tertiary-fixed-variant": "#653e00", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "background": "#faf8ff", "on-secondary-container": "#00714d", "surface-dim": "#d2d9f4", "secondary-fixed": "#6ffbbe", "on-primary-fixed": "#00201e", "on-surface": "#131b2e", "on-background": "#131b2e", "tertiary": "#472a00", "on-tertiary": "#ffffff", "inverse-primary": "#96d1cc", "secondary-container": "#6cf8bb", "primary": "#003734", "secondary-fixed-dim": "#4edea3", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-tint": "#2c6863", "primary-fixed-dim": "#96d1cc", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "primary-container": "#0b4f4b", "on-primary-container": "#85bfba" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "space-2xl": "2rem", "space-2xs": "0.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem", "space-lg": "1.25rem", "margin-tablet": "2rem", "gutter-tablet": "1.5rem", "space-md": "1rem", "space-3xl": "2.5rem", "margin-mobile": "1rem", "bottom-nav-safe": "4.5rem", "space-xl": "1.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "price-hero": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "price-card": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "price-hero": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "price-card": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary rounded-full transition-colors focus:outline-none" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><img alt="USTP SupplyHub Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V5FXCPM6smDUtUZ94lDar5LCE-9vMwL6pDVrBbSxSIbDAIKA3rvzJPToTuEwvholnCWdIArqr0eY7l18XT5_EKoXQm4-_6JaBIpLDdbogEWtZNzvopgYLpx3fqZMTSUlNDAYvKrUDnAMS4r_A9EDkrD_4V3GqPRBtHXhx16AyrkasfLnFteRGGZsu9tIk6egyGIyM1wqMX2QqMkWmmCVG90KakjUEuJQ-QABRCl4wOPBs2GIItFVxif_DC"/><div class="flex flex-col"><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Checkout</h1><span class="font-label-sm text-[10px] text-on-surface-variant">USTP CDO Campus</span></div></div></div><div class="flex items-center gap-space-2xs"><button aria-label="Share" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors focus:outline-none"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="min-w-[44px] min-h-[44px] flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeOZMdwCg1pn-W0Xv1nbi9ariMaOrNs1wiCp6lLkHunPmW_lB7oa0dxBMk11ikE9cyy38UwqxspP6NXdEhnw1GCYtPMHq35iatleslZgueCNNAzdfWB5AwtwNdkySN25dCh8ZG3Pt_WFVJmbRZna8lALH1DrpNi1ijO75AxTY6lKaTNYQXMCOcCKjoGYEk9tuNgeMdBqP7zXfKQDcSc3WHQy5R4FIVtMnPZduNyBUBCkIv_9fnJ0ZZeA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter-mobile pb-28 gap-space-md">
+<!-- Top Context Card / Campus Perks Banner -->
+<div class="w-full rounded-xl bg-surface-container p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">USTP Student ID Verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Institutional subsidies &amp; discounts active</span>
+</div>
+</div>
+<div class="shrink-0 bg-secondary-container text-on-secondary-fixed rounded-full px-2 py-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm">Save ₱57</span>
+</div>
+</div>
+<!-- Cart Items List Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-2xs">
+<h2 class="font-label-lg text-label-lg text-on-surface">Order Items (2)</h2>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">Bulk Campus Rate</span>
+</div>
+<!-- Item 1: Hard Copy A4 -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" id="cart-item-1">
+<div class="flex gap-space-sm items-start">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A clean top-down shot of a ream of premium white A4 copier paper resting on a sleek wooden university desk with campus study supplies nearby under soft natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeae1ifFBg0XEneu_ZgratK4l2r3fATxYF8537Ex7VfGL9l6B26sHx9G4ZBO2QLCyBW53FB4l-70jtHU6JUAdz1Hg9aC414j7WYEKI8QjYVuX1xU4KqGFSLxovuX1tikAWxDzdVjJmLj0TuhgRkZwDd6ekAwjVFAvi9eJMLGhTzZq7_FPLHCh9JGuIMyTzQn0cDfFbHswjkflrZUcuVIBT-A8VGnSg-XwvRF1Ljh6gQ4WV9SdTKjdwdQ"/>
+<span class="absolute bottom-1 left-1 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-[9px] px-1.5 py-0.5 rounded">A4 70gsm</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Hard Copy A4 Copier Paper</h3>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1" onclick="removeItem('cart-item-1', 480)">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">500 sheets • USTP Student Coop Kiosk</span>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-on-surface" id="subtotal-item-1">₱480</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₱240/ea</span>
+</div>
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container rounded-full p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" onclick="updateQty('item-1', -1, 240)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-label-md text-label-md text-on-surface" id="qty-item-1">2</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" onclick="updateQty('item-1', 1, 240)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low px-space-sm py-1.5 flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">storefront</span>
+<span class="font-body-sm text-body-sm">Pickup at Coop Kiosk • Free handling</span>
+</div>
+</div>
+<!-- Item 2: Pilot G-Tec C4 -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" id="cart-item-2">
+<div class="flex gap-space-sm items-start">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Close up product photograph of a black Pilot G-Tec C4 rollerball pen angled on clean white drafting paper alongside engineering blueprints in sharp modern campus lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUGKVCtRlss9rPo15pRnCEz-mbeI-PjvkR7TfRoozMWlwXfSVvlKIT6DonH_TEqq9nCH35IKh4741KDn0mVz48hLTDfpUpWzB4zwjbxXfyHSzPvpoLjPbDafTa5tUs0dfJV6s2dpcRsZn2anqYCW7BNdvNCSkiZqMVHyIe_bTxNC_VgiMzSHDYhqC9gQwpbcDvMWXbX5qKrzHipDj6dWruKx9BuU-ZQFogrvGHD6rZJsBU8A09rMI3xw"/>
+<div class="absolute top-1 left-1 bg-secondary-container text-on-secondary-fixed font-label-sm text-[9px] px-1 rounded">
+            -20%
+          </div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1">Pilot G-Tec C4 0.3mm</h3>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1" onclick="removeItem('cart-item-2', 68)">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Black rollerball • Campus BookStore</span>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-card text-price-card text-on-surface" id="subtotal-item-2">₱68</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₱85</span>
+</div>
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container rounded-full p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" onclick="updateQty('item-2', -1, 68)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-label-md text-label-md text-on-surface" id="qty-item-2">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" onclick="updateQty('item-2', 1, 68)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-sm py-1.5">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-body-sm text-body-sm">Official USTP Partner</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">
+          ₱17 saved
+        </span>
+</div>
+</div>
+</div>
+<!-- Delivery / Pickup Method Selection -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-2xs">
+<h2 class="font-label-lg text-label-lg text-on-surface">Fulfillment Option</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">USTP CDO Quad</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Option 1: Pickup (Selected) -->
+<label class="cursor-pointer bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm relative transition-all duration-150 has-[:checked]:bg-primary/5">
+<input checked="" class="mt-1 w-5 h-5 accent-primary text-primary" name="fulfillment" onchange="updateFulfillment(0)" type="radio" value="0"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Free On-Campus Pickup</span>
+<span class="font-label-md text-label-md text-secondary">FREE</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">USTP Student Center Booth 2</span>
+<div class="flex items-center gap-1.5 mt-2 text-on-tertiary-container bg-tertiary-fixed/40 px-2 py-1 rounded-lg w-fit">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-sm text-label-sm">Available today: 1:00 PM – 5:00 PM</span>
+</div>
+</div>
+</label>
+<!-- Option 2: Runner Delivery -->
+<label class="cursor-pointer bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm relative transition-all duration-150 has-[:checked]:bg-primary/5">
+<input class="mt-1 w-5 h-5 accent-primary text-primary" name="fulfillment" onchange="updateFulfillment(20)" type="radio" value="20"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Dorm / Canteen Runner Delivery</span>
+<span class="font-label-md text-label-md text-on-surface">+₱20</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Peer student courier brings it directly to your hall</span>
+<span class="font-body-sm text-body-sm text-outline mt-1">Estimated ~35 mins after fulfillment</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Payment Method Selection -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-2xs">
+<h2 class="font-label-lg text-label-lg text-on-surface">Payment Method</h2>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">lock</span> Encrypted
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<!-- GCash (Selected) -->
+<label class="cursor-pointer rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-low has-[:checked]:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">GCash</span>
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-[10px] px-1.5 py-0.2 rounded">Connected</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">0917***452</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 accent-primary text-primary" name="payment" type="radio" value="gcash"/>
+</label>
+<!-- Maya -->
+<label class="cursor-pointer rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-low has-[:checked]:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-outline text-[24px]">credit_card</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Maya</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pay via e-wallet</span>
+</div>
+</div>
+<input class="w-5 h-5 accent-primary text-primary" name="payment" type="radio" value="maya"/>
+</label>
+<!-- Cash on Pickup -->
+<label class="cursor-pointer rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-low has-[:checked]:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-outline text-[24px]">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Cash on Campus Pickup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pay at student booth counter</span>
+</div>
+</div>
+<input class="w-5 h-5 accent-primary text-primary" name="payment" type="radio" value="cash"/>
+</label>
+</div>
+</div>
+<!-- Order Summary Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<h2 class="font-label-lg text-label-lg text-on-surface">Cost Breakdown</h2>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md">
+<span>Items Subtotal</span>
+<span class="font-label-md text-on-surface" id="summary-subtotal">₱548</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md">
+<span>Campus Fulfillment</span>
+<span class="font-label-md text-secondary" id="summary-shipping">FREE</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-1">
+<span>Student Tech Subsidy</span>
+<span class="material-symbols-outlined text-[14px] text-primary">help_outline</span>
+</div>
+<span class="font-label-md text-secondary">-₱20</span>
+</div>
+<div class="p-2.5 rounded-lg bg-secondary-container/40 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-fixed">savings</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed">Total Savings</span>
+</div>
+<span class="font-label-md text-label-md text-on-secondary-fixed">₱57 Total Discount!</span>
+</div>
+<div class="pt-2 flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Total Payable</span>
+<span class="font-body-sm text-body-sm text-outline">Inclusive of campus VAT exemptions</span>
+</div>
+<span class="font-price-hero text-price-hero text-on-surface" id="summary-total">₱528</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Checkout Action Container -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md p-gutter-mobile shadow-[0_-4px_20px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-md mx-auto flex items-center gap-space-sm">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TOTAL</span>
+<span class="font-price-card text-price-card text-on-surface" id="sticky-total">₱528</span>
+</div>
+<button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-all" id="order-btn" onclick="triggerOrderSuccess()">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span id="order-btn-label">Place Order • ₱528</span>
+</button>
+</div>
+</div>
+<!-- Interactive Order Celebration Feedback Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-gutter-mobile" id="success-dialog">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl max-w-sm w-full flex flex-col items-center text-center shadow-xl animate-bounce-short">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Order Reserved!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 mb-space-md">
+        Pick-up code <span class="font-mono font-bold text-on-surface">#USTP-9482</span> sent to GCash and student email.
+      </p>
+<div class="w-full bg-surface-container rounded-xl p-space-sm mb-space-md text-left flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">USTP Student Center Booth 2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ready for claiming today 1:00 PM</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" onclick="dismissDialog()">
+        Back to Campus Marketplace
+      </button>
+</div>
+</div>
+</div>
+<script>
+  let state = {
+    item1: { qty: 2, price: 240 },
+    item2: { qty: 1, price: 68 },
+    fulfillmentFee: 0,
+    subsidy: 20
+  };
+
+  function recalculate() {
+    const subtotal = (state.item1.qty * state.item1.price) + (state.item2.qty * state.item2.price);
+    const total = Math.max(0, subtotal + state.fulfillmentFee - state.subsidy);
+
+    document.getElementById('summary-subtotal').textContent = '₱' + subtotal;
+    document.getElementById('summary-total').textContent = '₱' + total;
+    document.getElementById('sticky-total').textContent = '₱' + total;
+    document.getElementById('order-btn-label').textContent = 'Place Order • ₱' + total;
+
+    if (state.fulfillmentFee === 0) {
+      document.getElementById('summary-shipping').textContent = 'FREE';
+      document.getElementById('summary-shipping').className = 'font-label-md text-secondary';
+    } else {
+      document.getElementById('summary-shipping').textContent = '+₱' + state.fulfillmentFee;
+      document.getElementById('summary-shipping').className = 'font-label-md text-on-surface';
+    }
+  }
+
+  function updateQty(itemId, delta, unitPrice) {
+    if (itemId === 'item-1') {
+      const next = state.item1.qty + delta;
+      if (next >= 1) {
+        state.item1.qty = next;
+        document.getElementById('qty-item-1').textContent = next;
+        document.getElementById('subtotal-item-1').textContent = '₱' + (next * unitPrice);
+      }
+    } else if (itemId === 'item-2') {
+      const next = state.item2.qty + delta;
+      if (next >= 1) {
+        state.item2.qty = next;
+        document.getElementById('qty-item-2').textContent = next;
+        document.getElementById('subtotal-item-2').textContent = '₱' + (next * unitPrice);
+      }
+    }
+    recalculate();
+  }
+
+  function updateFulfillment(fee) {
+    state.fulfillmentFee = fee;
+    recalculate();
+  }
+
+  function removeItem(cardId, price) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        card.remove();
+        if (cardId === 'cart-item-1') state.item1.qty = 0;
+        if (cardId === 'cart-item-2') state.item2.qty = 0;
+        recalculate();
+      }, 150);
+    }
+  }
+
+  function triggerOrderSuccess() {
+    const dialog = document.getElementById('success-dialog');
+    dialog.classList.remove('hidden');
+  }
+
+  function dismissDialog() {
+    const dialog = document.getElementById('success-dialog');
+    dialog.classList.add('hidden');
+  }
+</script></main></body></html>
